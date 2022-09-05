@@ -1,0 +1,36 @@
+<script>
+    //PROBLEMA: Custo do dia de trabalho
+    //Peça para o programa perguntar ao usuário quantas viagens foram realizadas por dia e também qual o cargo que ocupa.
+    //Considere que o valor da diária é de R$ 100,00 (100).
+    //Se o usuário ocupar o cargo de "Motorista" e realizou até 10 viagens, haverá um adicional de 20% (20/100). Se o usuário ocupar o cargo de "Motorista" e realizou mais de 10 viagens, haverá um adicional de 35% (35/100).
+    //Contudo, se o cargo do usuário for "Cobrador" e realizou até 10 viagens, não haverá adicional. Se o usuário ocupar o cargo de "Cobrador" e realizou mais de 10 viagens, haverá um adicional de 10% (10/100)
+    //Apresente em tela o cargo do usuário e também o valor final recebido pelas viagens realizadas.
+
+    //ENTRADA
+const viagensPorDia = Number(prompt("informe as viagens realizadas por dia"))
+const cargoQueOcupa = Number(prompt("informe o cargo que ocupa: motorista - M, cobrador - C"))
+
+
+const dezViagens = viagensPorDia * 0.20 + viagensPorDia* 100
+const maisDeDez = viagensPorDia * 0.35 + viagensPorDia* 100
+const cobrador = viagensPorDia * 0.10 + viagensPorDia* 100
+const cobrado1 = viagensPorDia * 100
+
+    //PROCESSAMENTO
+if (viagensPorDia <= 10 ){
+document.write(`motorista, valor recebido pelas viagens realizadas ${dezViagens}`)}
+else if (viagensPorDia > 10  ) {
+  document.write (` motorista, valor recebido pelas viagens realizadas ${maisDeDez}`)
+}
+else if (cargoQueOcupa = c ) {
+    document.write(`cobrador, valor recebido pela viagem ${cobrador1}`)
+}
+
+
+else { document.write(` cobrador, valor recebido pela viagem ${cobrador}`)
+    
+}
+
+    //SAÍDA
+
+</script>
